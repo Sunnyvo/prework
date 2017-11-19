@@ -6,7 +6,7 @@ This is a simple application  that allows you to create, like, delete a post Twe
 - [x] User can see how many words left of a new post.
 - [x] User can delete a post.
 # Option stories, improve UI, add features:
-* [] Styling using frameworks like Bulma.
+- [x] Styling using frameworks like Bulma.
 * [] Adding user avatars and “time ago” to Tweets.
 * [] Adding in better state management with a framework like Redux.
 * [] Adding in animations.
