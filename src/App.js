@@ -12,11 +12,13 @@ class App extends Component {
       tweets: [
       {
         text: "hello Synny!",
-        liked: true
+        liked: true,
+        date: "Nov 19, 2017"
       },
       {
         text: "welcome back!",
-        liked: false
+        liked: false,
+        date: "Nov 19, 2017"
       }
 
     ]
