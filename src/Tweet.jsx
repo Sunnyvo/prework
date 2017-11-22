@@ -12,12 +12,12 @@ class Tweet extends Component {
 			<Box style={{marginRight: "300px", marginLeft: "300px", }} >
 				<Media>
 					<Media.Left>
-						<Image is='64x64' src="https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.0-9/15241934_1236741486392139_619487098797628764_n.jpg?oh=337dc3e9bb92a57db4be3620d8ee6b5b&oe=5AA1BB36" alt="Image"/>
+						<Image is='64x64' src={tweet.img} alt="Image"/>
 					</Media.Left>
 					<Media.Content>
 						<Content>
 							<p>
-								<strong>Sunny Vo</strong> <small><TimeAgo date={tweet.date != ""?tweet.date : ""}/> </small>
+								<strong>{tweet.name}</strong> <small><TimeAgo date={tweet.date != ""?tweet.date : ""}/> </small>
 								<br/>
 								{tweet.text}
 							</p>

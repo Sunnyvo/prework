@@ -20,7 +20,7 @@ class TweetBox extends Component {
 
   render() {
     return (
-      <div style={{ paddingLeft: '420px', paddingRight: "420px"}}>
+      <div style={{ paddingLeft: '280px', paddingRight: "280px"}}>
         <Textarea  type="text"
           placeholder={this.props.prompt}
           onChange ={e => this.handleChange(e.target.value)}

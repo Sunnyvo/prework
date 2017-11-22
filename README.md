@@ -7,7 +7,7 @@ This is a simple application  that allows you to create, like, delete a post Twe
 - [x] User can delete a post.
 # Option stories, improve UI, add features:
 - [x] Styling using frameworks like Bulma.
-* [] Adding user avatars and “time ago” to Tweets.
+* [x] Adding user avatars and “time ago” to Tweets.
 * [] Adding in better state management with a framework like Redux.
 * [] Adding in animations.
 * [] Creating a re-tweet button that “copies” the tweet.

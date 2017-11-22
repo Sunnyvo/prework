@@ -11,14 +11,18 @@ class App extends Component {
     this.state = {
       tweets: [
       {
+        name: "Charlee",
         text: "hello Synny!",
         liked: true,
-        date: "Nov 19, 2017"
+        date: "Nov 19, 2017",
+        img: "https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.0-9/13924881_10105599279810183_392497317459780337_n.jpg?oh=440ba97d054d9111e93017155dd0bb8b&oe=5A959890"
       },
       {
+        name: "Stanley",
         text: "welcome back!",
         liked: false,
-        date: "Nov 19, 2017"
+        date: "Nov 19, 2017",
+        img: "https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.0-9/21150111_10155596851743965_420675479642399202_n.jpg?oh=847822cf15989bf084c31069d7d420fd&oe=5A96FCBE"
       }
 
     ]
@@ -27,8 +31,11 @@ class App extends Component {
 
   handleTweet(tweetText){
     let tweetObj = {
+      name: "Sunny",
       text: tweetText,
-      like: false
+      like: false,
+      date: new Date(),
+      img: "https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.0-9/15241934_1236741486392139_619487098797628764_n.jpg?oh=337dc3e9bb92a57db4be3620d8ee6b5b&oe=5AA1BB36"
     }
     this.setState({
       tweets: this.state.tweets.concat(tweetObj)
@@ -39,7 +46,10 @@ class App extends Component {
       if(t.text == tweet.text){
         return{
           text: t.text,
-          liked: !t.liked
+          liked: !t.liked,
+          date: t.date,
+          name: t.name,
+          img: t.img
         }
       }
       return t;
